@@ -11,7 +11,7 @@ tags:
 # 步骤
 1. 安装Node.js/Git/Hexo
 2. 初始化
-    - 创建仓库
+    - 创建代码仓库
     - 添加ssh key到github
     - 发布文章
 3. 安装主题
@@ -70,15 +70,16 @@ deploy:
 ```
 例如我的修改为repository: git@github.com:xpengV/xpengV.github.io.git
 
-## 2.2、连接Github
-1. 检查是否可以连接github
+## 2.2、添加ssh key到github
+- 检查是否可以连接github
 ```java
 ssh -T git@github.com
 ```
 ![博客搭建-4](/img/博客搭建/004.png)
 若如上则跳过该步骤，否则继续
 
-2. 生成新的ssh key
+
+- 生成新的ssh key
 在BlogNoun目录执行以下命令，邮箱地址是注册github时的邮箱地址
 ```java
 ssh-keygen -t rsa -C "yourEmail@163.com"
@@ -87,11 +88,11 @@ ssh-keygen -t rsa -C "yourEmail@163.com"
 ![博客搭建-5](/img/博客搭建/005.png)
 默认会在~/.ssh生成id_rsa和id_rsa.pub两个文件
 
-3. 添加公钥
+- 添加公钥
 打开~/.ssh/id_rsa.pub文件，将其中的全部内容拷贝添加到github的SSH key中
 github-->setting-->SSH keys-->add SSH keys
 ![博客搭建-6](/img/博客搭建/006.png)
-添加后点击Add Keys按钮，然后使用ssh -T git@github.com测试是否连接成功！
+点击SSH and GPG keys 添加sshkey即可。添加后点击Add Keys按钮，然后使用ssh -T git@github.com测试是否连接成功！
 
 ## 2.3、发布文章
 终端cd到BlogNoun目录，执行命令 hexo new "filename" 新建文章
@@ -106,7 +107,7 @@ BlogNoun xiaopeng$
 
 关于markdown语法，可以学习[markdown教程](https://www.jianshu.com/p/20e82ddb37cb)
 
-之后使用
+之后使用，生成静态页面，并远程部署
 ```java
 hexo d -g //生成静态页面，并远程部署
 ```
@@ -119,14 +120,16 @@ hexo d -g //生成静态页面，并远程部署
 Hexo是一个简单优雅，风格多变的平台。这里有很多非常炫酷的主题。[主题连接](https://www.zhihu.com/question/24422335)
 我使用的就是[git@github.com:litten/hexo-theme-yilia.git](http://litten.me/)
 
-1. 选择自己喜欢的主题后，获得他的clone with ssh，在BlogNoun目录执行以下命令
+
+1.选择自己喜欢的主题后，获得他的clone with ssh，在BlogNoun目录执行以下命令
+
 获得地址方法：
 ![博客搭建-009](/img/博客搭建/009.png)
 ```java
 git clone git@github.com:litten/hexo-theme-yilia.git
 ```
 
-2. 将BlogNoun/_config.yml中的theme属性由landscape修改为yilia
+2.将BlogNoun/_config.yml中的theme属性由landscape修改为yilia
 ```java
 # Extensions
 ## Plugins: https://hexo.io/plugins/
@@ -135,26 +138,26 @@ git clone git@github.com:litten/hexo-theme-yilia.git
 theme: yilia   #这里修改为你自己的主题
 ```
 
-3. 重新部署
+3.重新部署
 ```java
 hexo d -g
 ```
 重新部署过后，刚才的first_article就变成
 ![博客搭建-010](/img/博客搭建/010.png)
 
-4. 主题自定义
+4.主题自定义
 至于更改theme的内容。比如名称，描述，头像，网站连接，关于我等。修改BlogNoun/_config.yml和BlogNoun/theme/yilia/_config.yml
 文件中对应的属性值即可。在[hexo-theme-yilia的readme.md](https://github.com/litten/hexo-theme-yilia/blob/master/README.md)中有详细的教程！
 
 # 4、添加相册功能
-yilia支持添加相册，但是由于我还没有搞明白像素的问题，所以导致照片有些失真。
+yilia支持添加相册，但是由于我还没有搞明白yilia像素处理的问题，所以导致照片有些失真。
 ![博客搭建-011](/img/博客搭建/011.png)
-1. 在BlogNoun目录执行
+1.在BlogNoun目录执行
 ```java
 hexo new page photos  #在BlogNoun/source目录下创建photos目录
 ```
 
-2. 将yilia处理图片的代码拷贝到photos目录中
+2.将yilia处理图片的代码拷贝到photos目录中
 *https://github.com/litten/BlogBackup/tree/master/source/photos*
 - index.ejs
 - ins.css
@@ -162,7 +165,7 @@ hexo new page photos  #在BlogNoun/source目录下创建photos目录
 - ins.json
 - lazyload.min.js
 
-3. 修改相应的配置文件（自己研究吧，只说思路）
+3.修改相应的配置文件（自己研究吧，只说思路）
 - source/photos/index.ejs  先屏蔽掉摄影模块的功能；**修改你存放相册照片的url(可以单独建立一个github代码仓库用来存放照片）。我是在source/photos_resource下存放图片的**
 ```java
 <!--
@@ -240,7 +243,7 @@ hexo new page photos  #在BlogNoun/source目录下创建photos目录
 ```
 **修改加载图片的url、minSrc和src**
 
-4. 打开相册菜单
+- 打开相册菜单
 修改BlogNoun/theme/yilia/_config.yml
 ```java
 menu:
@@ -254,25 +257,30 @@ menu:
 # 5、网易云音乐外链
 以前的QQ空间或者其他博客网站可以加入第三方的音乐播放外链，比如[xiaopeng.pro](http://xiaopeng.pro/2018/04/19/网易云音乐热评-转载/)
 
-1. 访问[网易云](https://music.163.com)
+1.访问[网易云](https://music.163.com)
+
 ![博客搭建-012](/img/博客搭建/012.png)
+
 点击生成外链播放器可以获得以下代码：
 ```java
 <embed src="//music.163.com/style/swf/widget.swf?-------------------" width="340" height="86"  allowNetworking="all"></embed>
 ```
 
-2. 将上述代码拷贝到source/_posts中md文件合适的位置即可
+
+2.将上述代码拷贝到source/_posts中md文件合适的位置即可
 
 # 6、绑定个人域名
 我是在阿里云购买的域名，xiaopeng.pro。绑定个人域名操作非常简单。
-1. 在BlogNoun/source目录下创建CNAME文件，在里面添加域名信息(你的域名)
+1.在BlogNoun/source目录下创建CNAME文件，在里面添加域名信息(你的域名)
+
 ![博客搭建-013](/img/博客搭建/013.png)
 
-2. github项目添加域名
+2.github项目添加域名
+
 在userName/userName.github.io/setting/GitHub Pages添加域名
 ![博客搭建-014](/img/博客搭建/014.png)
 
-3. 给域名添加解析记录
+3.给域名添加解析记录
 - ping你的博客地址
 ```java
 source xiaopeng$ ping xpengv.github.io
