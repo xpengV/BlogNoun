@@ -76,7 +76,7 @@ google_analytics: ''
 favicon: /favicon.png
 
 #你的头像url
-avatar: /img/avatar01.jpg
+avatar: /img/avatar02.jpg
 
 #是否开启分享
 share_jia: true
@@ -135,8 +135,4 @@ smart_menu:
 #  友情链接5: http://localhost:4000/
 #  友情链接6: http://localhost:4000/
 
-aboutme: 肖   鹏<br><br>
-         QQ：1584439731<br>
-         Email：a_xiao_peng@163.com<br>
-         ----------------------------<br><br>
-         胆小认生 ，不易相处<br>
+aboutme: 肖   鹏<br><br>QQ：1584439731<br>Email：a_xiao_peng@163.com<br>----------------------------<br><br>喜欢这种东西<br>捂住嘴巴<br>也会从眼睛里跑出来<br><br>年轻无为，以码为生!<br>
