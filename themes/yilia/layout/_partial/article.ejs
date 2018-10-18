@@ -18,6 +18,10 @@
         <%- post.content %>
       <% } %>
 
+      <!-- add by xiaopeng@20181018 for 文章末尾添加版权声明 start -->
+      <%- partial('post/declare') %>
+      <!-- add by xiaopeng@20181018 for 文章末尾添加版权声明 end -->
+
       <% if ((theme.reward_type === 2 || (theme.reward_type === 1 && post.reward)) && !index){ %>
         <div class="page-reward">
           <a href="javascript:;" class="page-reward-btn tooltip-top">

@@ -1,6 +1,7 @@
 ---
 title: WebService
 date: 2018-04-21 22:08:20
+declare: true
 tags:
 - WebService
 ---
