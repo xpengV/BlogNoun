@@ -3,8 +3,7 @@
   sUrl = /^(http:|https:)\/\//.test(sUrl) ? sUrl : 'https:' + sUrl;
 %>
 <% if ((theme.declare_type === 2 || (theme.declare_type === 1 && post.declare)) && !index){ %>
-  <div class="declare">
-    <hr>
+  <div class="declare" style="background-color: #eaeaea;margin-top: 2em;border-left: 3px solid #ff1700;padding: .5em 1em;">
     <strong>本文作者：</strong>
     <% if(config.author != undefined){ %>
       <%= config.author%>
@@ -23,7 +22,6 @@
       <br>
       <a rel="license" href="<%= theme.licensee_url%>"><img alt="知识共享许可协议" style="border-width:0" src="<%= theme.licensee_img%>"/></a>
     <% } %>
-    <hr>
   </div>
 <% } else {%>
   <div class="declare" hidden="hidden"></div>
