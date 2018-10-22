@@ -99,12 +99,14 @@
     }) %>
   <% } %>
 
-  <% if (theme.changyan_appid && theme.changyan_conf){ %>
-  <%- partial('post/changyan', {
-      key: post.slug,
-      title: post.title,
-      url: config.url+url_for(post.path)
-    }) %>
+  <% if (theme.changyanOpen){ %>
+    <% if (theme.changyan_appid && theme.changyan_conf){ %>
+    <%- partial('post/changyan', {
+        key: post.slug,
+        title: post.title,
+        url: config.url+url_for(post.path)
+      }) %>
+    <% } %>
   <% } %>
 
   <% if (theme.disqus || config.disqus_shortname){ %>
@@ -135,9 +137,11 @@
 <% } %>
 
 <% if (!index){ %>
-  <% if (post.comments){ %>
+  <% if (theme.livere){ %>
   <%- partial('post/livere') %>
   <% } else { %>
-    <div class="lv-container"></div>
+    <span id="error" style="font-size:11px">
+         评论系统加载失败...
+    </span>
   <% } %>
 <% } %>
