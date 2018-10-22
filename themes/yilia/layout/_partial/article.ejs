@@ -82,7 +82,6 @@
 <% } %>
 <%- partial('_partial/aside') %>
 
-
 <% if (!index && post.comments){ %>
   <% if (theme.duoshuo){ %>
   <%- partial('post/duoshuo', {
@@ -132,5 +131,13 @@
       title: post.title,
       url: config.url+url_for(post.path)
     }) %>
+  <% } %>
+<% } %>
+
+<% if (!index){ %>
+  <% if (post.comments){ %>
+  <%- partial('post/livere') %>
+  <% } else { %>
+    <div class="lv-container"></div>
   <% } %>
 <% } %>

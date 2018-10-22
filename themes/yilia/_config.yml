@@ -100,8 +100,11 @@ duoshuo: false
 wangyiyun: false
 
 #3、畅言
-changyan_appid: cytF0a7oK
-changyan_conf: 8447eb48918ae157eb877e80f01b288a
+# changyan_appid: cytF0a7**
+# changyan_conf: 8447eb4****ae157eb877**0f01b***
+
+# livere评论系统
+livere: MTAyMC80MDQ0NS8xNjk3Mg
 
 #4、Disqus 在hexo根目录的config里也有disqus_shortname字段，优先使用yilia的
 disqus: false
