@@ -8,6 +8,7 @@
   "dependencies": {
     "bluebird": "^3.5.1",
     "hexo": "^3.7.1",
+    "hexo-abbrlink": "^2.0.5",
     "hexo-deployer-git": "^0.3.1",
     "hexo-generator-archive": "^0.1.4",
     "hexo-generator-category": "^0.1.3",
