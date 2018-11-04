@@ -2,14 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4b46b2f5-0a51-4d0a-942b-992afc80eab0" name="Default" comment="文章URL链接优化&#10;--------------------------------&#10;npm install hexo-abbrlink --save&#10;update /_config.yml">
-      <change beforePath="" afterPath="$PROJECT_DIR$/min_photos/2018-10-01_生日快乐🎂.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/min_photos/2018-10-14_上海外滩01.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/min_photos/2018-10-14_上海外滩02.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/min_photos/2018-10-14_上海外滩03.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/min_photos/2018-10-14_上海外滩04.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/min_photos/2018-10-14_上海外滩05.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/min_photos/2018-10-14_东方明珠.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/min_photos/2018-10-20_中华艺术宫.jpg" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -340,7 +332,7 @@
       <workItem from="1541036614943" duration="2941000" />
       <workItem from="1541129914348" duration="1735000" />
       <workItem from="1541314473414" duration="2298000" />
-      <workItem from="1541332747290" duration="4175000" />
+      <workItem from="1541332747290" duration="4201000" />
     </task>
     <task id="LOCAL-00001" summary="修改头像，删除无用文件">
       <created>1537324708652</created>
@@ -454,11 +446,18 @@
       <option name="project" value="LOCAL" />
       <updated>1540953767986</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="文章URL链接优化&#10;--------------------------------&#10;npm install hexo-abbrlink --save&#10;update /_config.yml">
+      <created>1541342665784</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1541342665784</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="96426000" />
+    <option name="totallyTimeSpent" value="96452000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="812" extended-state="0" />
