@@ -121,20 +121,20 @@ def handle_photo():
             list_info[index]['arr']['text'].append(info)
             list_info[index]['arr']['type'].append('image')
 
-    else:  # 不是同一个日期创建一个新的 dict
-        new_dict = {"date": year_month, "arr":{'year': date.year,
-                                               'month': date.month,
-                                               'link': [filename],
-                                               'text': [info],
-                                               'type': ['image']
-                                               }
-                   }
-        date_list.append(date)
-        list_info.append(new_dict)
+        else:  # 不是同一个日期创建一个新的 dict
+            new_dict = {"date": year_month, "arr":{'year': date.year,
+                                                   'month': date.month,
+                                                   'link': [filename],
+                                                   'text': [info],
+                                                   'type': ['image']
+                                                   }
+                    }
+            date_list.append(date)
+            list_info.append(new_dict)
 
     list_info = SortDict(list_info)
     final_dict = {"list": list_info}
-    with open("./source/photos/data.json", "w") as fp:
+    with open("./source/photos/ins.json", "w") as fp:     # yilia原本使用的是ins.json  ,这里将脚本中的data.json修改为ins.json
         json.dump(final_dict, fp)
 
 

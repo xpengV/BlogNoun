@@ -117,11 +117,14 @@
         var liTmpl = "";
         for (var i = 0, len = data.link.length; i < len; i++) {
 	  //相册从github获取时需要作如下操作 https://raw.githubusercontent.com/lawlite19/blog-back-up/master/photos/
-          var minSrc = 'https://raw.githubusercontent.com/xpengV/BlogNoun/master/source/photos_resource/' + data.link[i] + '.jpg';  //去指定目录加载所有图片
-          var src =    'https://raw.githubusercontent.com/xpengV/BlogNoun/master/source/photos_resource/' + data.link[i];
+          var minSrc = 'https://raw.githubusercontent.com/xpengV/BlogNoun/master/min_photos/' + data.link[i];  //去指定目录加载所有图片
+          var src =    'https://raw.githubusercontent.com/xpengV/BlogNoun/master/photos/' + data.link[i];
           var type = data.type[i];
-          var target = src + (type === 'video' ? '.mp4' : '.jpg');
-          src += '.jpg';
+
+          //.jpg  后缀被省略掉 modify by xiaopeng 20181104
+          // var target = src + (type === 'video' ? '.mp4' : '.jpg');
+            var target = src + (type === 'video' ? '.mp4' : '');
+          // src += '.jpg';
 
           liTmpl += '<figure class="thumb" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject">\
                 <a href="' + src + '" itemprop="contentUrl" data-size="640x640" data-type="' + type + '" data-target="' + target + '">\
