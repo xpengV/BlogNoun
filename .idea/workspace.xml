@@ -2,7 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4b46b2f5-0a51-4d0a-942b-992afc80eab0" name="Default" comment="文章URL链接优化&#10;--------------------------------&#10;npm install hexo-abbrlink --save&#10;update /_config.yml">
-      <change beforePath="$PROJECT_DIR$/min_photos/2018-10-01_生日快乐🎂.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/min_photos/2018-04-25_深圳莲花上公园游.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/min_photos/2018-04-25_深圳莲花山公园.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/min_photos/2018-04-25_深圳莲花山公园放风筝.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/min_photos/2018-05-10_夕阳.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/min_photos/2018-05-10_游记01.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/min_photos/2018-05-10_游记02.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/min_photos/2018-05-27_为了部落为了希女王.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/min_photos/2018-05-27_深圳宝安图书馆.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/min_photos/2018-10-01_生日快乐.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/min_photos/2018-10-14_上海外滩01.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/min_photos/2018-10-14_上海外滩02.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/min_photos/2018-10-14_上海外滩03.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/min_photos/2018-10-14_上海外滩04.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/min_photos/2018-10-14_上海外滩05.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/min_photos/2018-10-14_东方明珠.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/min_photos/2018-10-20_中华艺术宫.jpg" afterPath="" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -326,7 +341,7 @@
       <workItem from="1541036614943" duration="2941000" />
       <workItem from="1541129914348" duration="1735000" />
       <workItem from="1541314473414" duration="2298000" />
-      <workItem from="1541332747290" duration="4712000" />
+      <workItem from="1541332747290" duration="4825000" />
     </task>
     <task id="LOCAL-00001" summary="修改头像，删除无用文件">
       <created>1537324708652</created>
@@ -451,7 +466,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="96963000" />
+    <option name="totallyTimeSpent" value="97076000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="812" extended-state="0" />
