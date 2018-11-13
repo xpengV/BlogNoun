@@ -4,6 +4,7 @@
     <file url="file://$PROJECT_DIR$/source/verb/index.ejs" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/themes/yilia/layout/_partial/after-footer.ejs" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/themes/yilia/layout/_partial/footer.ejs" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/themes/yilia/layout/_partial/left-col.ejs" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/themes/yilia/layout/_partial/post/gitment.ejs" charset="UTF-8" />
   </component>
 </project>
